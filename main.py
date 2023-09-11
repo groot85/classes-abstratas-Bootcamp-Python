@@ -19,6 +19,12 @@
 #obs.: classe abstrata possui metodos abstratos, não tem implementacao. Funciona como se fosse um "template" para a classe filha) | #cliente homem e cliente mulher serão herdeiros de Clientes
 #@property #a propriedade serve para acessar pelo mundo externo a variável que está escondida, que so tem no mundo interno ex:  _variavel ex _nome
 
+#obs2: tratamento erro
+#try:
+    # Algum código.... 
+#except:
+    # Bloco opcional para lidar com uma exceção (se necessário)
+
 from abc import ABC, abstractmethod
 
 class Cliente (ABC):
