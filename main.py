@@ -1,23 +1,23 @@
-# O banco Banco Delas é um banco moderno e eficiente, com vantagens exclusivas para clientes mulheres (-- > class Cliente)
+#Exercicio 2 - classes abstratas
 
+#Regras: 
+# O banco Banco Delas é um banco moderno e eficiente, com vantagens exclusivas para clientes mulheres (-- > class Cliente)
 # Modele um sistema orientado a objetos para representar contas correntes do Banco Delas seguindo os requisitos abaixo.
 
 # 1. Cada [conta corrente] pode ter um ou mais [clientes] como titular. - os requisitos para criar classe
-
-     ## 2. O banco controla apenas o [nome], o [telefone] e a [renda mensal] de cada cliente.
-# 3. A conta corrente apresenta um saldo e uma lista de operações de saques e depósitos. [atributo]
-#    Quando a cliente fizer um saque, diminuiremos o saldo da conta corrente. Quando ela 
-#    fizer um depósito, aumentaremos o saldo. SACAR/DEPOSITAR
-# 4. [Clientes mulheres] possuem em suas contas um cheque especial de valor igual à sua renda
-#    mensal, ou seja, elas podem sacar valores que deixam a sua conta com valor negativo até
-#    -renda_mensal. [logica que faz relaçao com o saque]
+# 2. O banco controla apenas o [nome], o [telefone] e a [renda mensal] de cada cliente.
+# 3. A conta corrente apresenta um saldo e uma lista de operações de saques e depósitos. [atributo] Quando a cliente fizer um saque, diminuiremos o saldo da conta corrente. Quando ela fizer um depósito, aumentaremos o saldo. SACAR/DEPOSITAR
+# 4. [Clientes mulheres] possuem em suas contas um cheque especial de valor igual à sua renda mensal, ou seja, elas podem sacar valores que deixam a sua conta com valor negativo até -renda_mensal. [logica que faz relaçao com o saque]
 # 5. [Clientes homens] por enquanto não têm direito a cheque especial. - dois tipos de clientes tem comportamento dif
-
 # Para modelar seu sistema, utilize obrigatoriamente os conceitos:
-# "classe", "herança", "propriedades", "encapsulamento" e "classe abstrata - 
+# "classe"
+#"herança"
+#"propriedades"
+#"encapsulamento"
+#"classe abstrata"
      
-#classe abstrata possui metodos abstratos, não tem implementacao. Funciona como se fosse um "template" para a classe filha).
-     #cliente homem e cliente mulher serão herdeiros de Clientes
+#obs.: classe abstrata possui metodos abstratos, não tem implementacao. Funciona como se fosse um "template" para a classe filha).
+#cliente homem e cliente mulher serão herdeiros de Clientes
 #@property #a propriedade serve para acessar pelo mundo externo a variável que está escondida, que so tem no mundo interno ex:  _variavel ex _nome
 
 from abc import ABC, abstractmethod
